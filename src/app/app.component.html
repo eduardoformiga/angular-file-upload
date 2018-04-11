@@ -1,0 +1,17 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+</div>
+  <div>
+    Vídeo
+  </div>
+  <div>
+      <!--<label [for]="'file-upload'" class="custom-file-upload">
+        <img [src]="imagemRelatorioSrc">
+      </label>-->
+      <input [id]="'file-upload'" type="file" (change)="imageReportChange($event)" accept="video/mp4,video/x-m4v,video/*">
+
+      <input type="button" value="SALVAR" (click)="salvar()">
+  </div>
+
